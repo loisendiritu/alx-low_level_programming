@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 
 /**
- * main - prints ALX
+ * main - prints 
  * 
  * Description: prints ALX
  * 
@@ -11,10 +12,10 @@
 
 int main(void)
 {
-	char text[10] = "ALX";
+	char text[8] = "_putchar"
 	int i = 0;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(text[i]);
 	}
