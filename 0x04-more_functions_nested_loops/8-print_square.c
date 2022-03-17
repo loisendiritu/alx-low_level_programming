@@ -1,24 +1,30 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_square - Print square using # based on input.
- * @n : The user inputu
- * Return: Void.
+ * print_square - draws a square
+ * @size: length and width of square
+ *
+ * Return: void
  */
-void print_square(int n)
-{
-int x;
-int y;
 
-for (y = 0; y < n; y++)
+void print_square(int size)
 {
-for (x = 0; x < n; x++)
-{
-_putchar('#');
-}
-_putchar('\n');
-}
-if (n <= 0)
-{
-_putchar('\n');
+	int row;
+	int column;
+
+	if (size > 0)
+	{
+		for (row = 0; row < size; row++)
+		{
+			for (column = 0; column < size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
