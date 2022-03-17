@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - print 0-15  10xand end with new line.
- *
- * @n:user input of number of line
- * Return: 0-15 10x and new line after
+ * print_line - a function that draws a straight line in the terminal.
+ * followed by a new line.
+ * @n: An input integer
+ * Return: Always 0
  */
-
 void print_line(int n)
 {
-if (n > 0)
-{
-int i;
-for (i = 0; i <= n; i++)
-{
-_putchar('_');
-}
-}
+	int i = 0;
 
-_putchar('\n');
+	if (n > 0)
+	{
+		for (; i < n; i++)
+			_putchar('_');
+	}
+	_putchar('\n');
 }
